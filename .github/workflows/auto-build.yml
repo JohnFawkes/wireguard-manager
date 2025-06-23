@@ -15,7 +15,7 @@ jobs:
       API_IPENGINE_URL: https://api.ipengine.dev
     steps:
       - name: Check out code into the directory
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Test the network using "${{ env.API_IPENGINE }}"
         run: curl "${{ env.API_IPENGINE_URL }}"
       - name: Install wireguard via wireguard-manager
